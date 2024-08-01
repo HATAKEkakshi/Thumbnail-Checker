@@ -56,3 +56,4 @@ urllib3==2.2.2
 wheel==0.43.0
 google.generativeai
 python-dotenv
+langchain-google-genai
