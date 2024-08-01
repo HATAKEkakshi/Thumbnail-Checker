@@ -5,8 +5,8 @@ import os
 import google.generativeai as genai
 load_dotenv()
 from  PIL import Image
-
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+Google_API_KEY=st.secrets["GOOGLE_API_KEY"]
+os.environ["GOOGLE_API_KEY"]=Google_API_KEY
 
 def get_gemini_response(input_prompt,image):
     model=genai.GenerativeModel("gemini-1.5-pro")
